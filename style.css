@@ -1,64 +1,152 @@
 html {
   height: 100%;
   width: 100%;
- font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  overflow: hidden;
 }
-header{
-  
+
+/* PARTE HOME */
+
+#escrita {
+  position: absolute;
+  font-size: large;
+  width: 300px;
+  bottom: -180px;
+ right: -130px;
+  text-align: center;
+  background-image: linear-gradient(to bottom, rgba(240, 248, 255, 0.418) ,rgb(255, 255, 255));
+  transform: rotate(50deg);
+  height: 400px;
+transition: 3s;
+border-radius: 10px;
+z-index: 2;
+}
+
+h1,p{
+  position: absolute;
+  z-index: 3;
+  right: 10px;
+  width: 200px;
+  transition-duration: 5s;
+  right: 50px;
+ 
+}
+p { 
+font-weight: 300;
+top: 45%;
+text-wrap: balance;
+}
+h1{
+ 
+font-size: 2em;
+top:23%;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+
+#videoinicio {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  object-fit: cover;
+z-index: 1;
+}
+
+#começar{
+  position: absolute;
+right: 5%;
+bottom: 30px;
+  border-radius:10px;
+  width: 100px;
+  font-size: larger;
+z-index: 3;
+transition: 4s;
+color:aliceblue;
+background-color: greenyellow;
+}
+
+/* PARTE INICIAL */
+header {
+
   width: 100%;
   height: 8vh;
-  position: relative;
+  position: fixed;
   top: 0;
-  
+  left: 0;
+
 }
-section{
+
+header img {
+  height: 7vh;
+  width: 7vh;
+  margin: 15px 0px 0px 20px;
+}
+
+section {
   display: flex;
   justify-content: space-between;
+  ;
 }
-ul{
+
+ul {
   display: flex;
   align-items: center;
-  
-  }
-li{
-  padding: 20px;
+
+}
+
+li {
+  padding: 10px;
   list-style: none;
 }
+
 li a {
   text-decoration: none;
   color: black;
-  font-size: larger;
-   
-}
-input{
-  height: 20px;
-  width: 200px;
-  margin: 40px;
-}
-main div{
-  text-align: center;
-  width: 50%;
- margin: 150px 0px 150px 0px;  
-  
-}
-main p {
-  font-size: xx-large;
-  text-align-last: left;
-  text-align: center;
+  font-size: medium;
+  border-width: 10px;
 
 }
-main button{
-  background-color:black ;
+
+li a:hover {
+
+  border-color: black;
+}
+
+input {
+  height: 20px;
+  width: 100px;
+  margin: 20px 10px;
+}
+
+main div {
+  text-align: center;
+  width: 50%;
+  margin: 150px 0px 150px 0px;
+
+}
+
+main p {
+  font-size: 2.5em;
+
+}
+
+main button {
+  background-color: black;
   color: white;
   border-radius: 10px;
   height: 40px;
   width: 200px;
   font-size: larger;
-  border: ;
-  
+
 }
-footer{
- 
+
+footer {
+
   width: 100%;
   height: 8vh;
   position: absolute;
